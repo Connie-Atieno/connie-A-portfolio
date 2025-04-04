@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connie Atieno - Digital Specialist</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #121212;
+      color: #e0e0e0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #0073b1;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    #download-cv {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+
+    #download-cv:hover {
+      background-color: #ff1493;
+    }
+
+    section {
+      margin: 2rem 0;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #0073b1;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 2rem;
+    }
+
+    footer { 
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #0073b1;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Hi, I'm <span style="color: #ff69b4;">Connie Atieno</span></h1>
+      <p>Digital Specialist | Nairobi, Kenya</p>
+      <p>I'm a professional Digital Solutions Specialist with expertise in website management, Front end development (JavaScript), Canva, workflow automation, and database systems.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/connie-atieno-814154128/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:atieno46@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+254702216976"><i class="fas fa-phone"></i></a>
+      </div>
+      <button id="download-cv">Download CV</button>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Sales Tools: Salesforce, Mailchimp</li>
+        <li>Automation Development: Workflow automation, API integration</li>
+        <li>Web Optimization: SEO principles, Google Analytics</li>
+        <li>Technical Expertise: WordPress</li> 
+        <li>Design Tools: Canva, CapCut</li>
+        <li>Social Media: Content creation, strategy</li>
+        <li>Content Creation: Video editing, writing</li>
+        <li>Database Management: Access, SQL</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: atieno46@gmail.com | Phone: +254702216976</p>
+      <a href="https://www.linkedin.com/in/connie-atieno-814154128/" target="_blank">LinkedIn Profile</a>
+    </div>
+  </footer>
+
+  <script>
+    // Ensuring Dark Mode is Enabled
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("dark-mode");
+    });
+
+    // Download CV Button Functionality
+    document.getElementById('download-cv').addEventListener('click', () => {
+        window.open('connie-cv.jpeg', '_blank'); // Ensure connie-cv.jpeg is in the same folder as this HTML file
+    });
+  </script>
+</body>
+</html>
